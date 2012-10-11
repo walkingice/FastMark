@@ -39,6 +39,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="1"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:text="@string/btn_1" />
 
             <Button
@@ -46,6 +48,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="2"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_2" />
@@ -55,6 +59,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="3"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:text="@string/btn_3" />
         </TableRow>
 
@@ -67,6 +73,8 @@
                 android:id="@+id/button04"
 		style="@style/btn_text"
 		android:tag="4"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
 		android:onClick="onClickNum"
                 android:text="@string/btn_4" />
 
@@ -75,6 +83,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="5"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_5" />
@@ -84,6 +94,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="6"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:text="@string/btn_6" />
         </TableRow>
 
@@ -97,6 +109,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="7"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:text="@string/btn_7" />
 
             <Button
@@ -104,6 +118,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="8"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_8" />
@@ -113,6 +129,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="9"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:text="@string/btn_9" />
         </TableRow>
 
@@ -126,6 +144,8 @@
 		android:onClick="onClickNum"
 		style="@style/btn_text"
 		android:tag="0"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingBottom="@dimen/padding_large"
                 android:layout_weight="1"
                 android:text="@string/btn_0" />
 
@@ -146,7 +166,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tableLayout1"
-        android:layout_marginTop="38dp"
+	android:layout_marginTop="@dimen/padding_medium"
 	style="@style/btn_text"
 	android:text="@string/btn_done" />
 
