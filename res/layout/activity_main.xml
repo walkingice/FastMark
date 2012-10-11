@@ -34,16 +34,22 @@
 
             <Button
                 android:id="@+id/button01"
+		android:onClick="onClickNum"
+		android:tag="1"
                 android:text="@string/btn_1" />
 
             <Button
                 android:id="@+id/button02"
+		android:onClick="onClickNum"
+		android:tag="2"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_2" />
 
             <Button
                 android:id="@+id/button03"
+		android:onClick="onClickNum"
+		android:tag="3"
                 android:text="@string/btn_3" />
         </TableRow>
 
@@ -54,16 +60,22 @@
 
             <Button
                 android:id="@+id/button04"
+		android:tag="4"
+		android:onClick="onClickNum"
                 android:text="@string/btn_4" />
 
             <Button
                 android:id="@+id/button05"
+		android:onClick="onClickNum"
+		android:tag="5"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_5" />
 
             <Button
                 android:id="@+id/button06"
+		android:onClick="onClickNum"
+		android:tag="6"
                 android:text="@string/btn_6" />
         </TableRow>
 
@@ -74,16 +86,22 @@
 
             <Button
                 android:id="@+id/button_07"
+		android:onClick="onClickNum"
+		android:tag="7"
                 android:text="@string/btn_7" />
 
             <Button
                 android:id="@+id/button_08"
+		android:onClick="onClickNum"
+		android:tag="8"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
                 android:text="@string/btn_8" />
 
             <Button
                 android:id="@+id/button_09"
+		android:onClick="onClickNum"
+		android:tag="9"
                 android:text="@string/btn_9" />
         </TableRow>
 
@@ -94,6 +112,8 @@
 
             <Button
                 android:id="@+id/button00"
+		android:onClick="onClickNum"
+		android:tag="0"
                 android:layout_weight="1"
                 android:text="@string/btn_0" />
 
