@@ -131,6 +131,7 @@
 
             <Button
                 android:id="@+id/button_clear"
+		android:onClick="onClickClear"
 		style="@style/btn_text"
                 android:layout_weight="2"
                 android:text="@string/btn_clear" />
@@ -139,6 +140,7 @@
 
     <Button
         android:id="@+id/button1"
+	android:onClick="onClickDone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

@@ -2,6 +2,9 @@
 
     <string name="app_name">FastMark</string>
     <string name="hello_world">Hello world!</string>
+    <string name="warning_title">Warning</string>
+    <string name="warning_msg_length_mismatch">The length is not correct</string>
+    <string name="warning_confirm">OK</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="btn_done">Done</string>
