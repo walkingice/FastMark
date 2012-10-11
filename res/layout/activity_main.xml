@@ -14,7 +14,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+	    style="@style/display_text"
             android:inputType="number" >
         </TextView>
     </LinearLayout>
@@ -35,12 +37,14 @@
             <Button
                 android:id="@+id/button01"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="1"
                 android:text="@string/btn_1" />
 
             <Button
                 android:id="@+id/button02"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="2"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
@@ -49,6 +53,7 @@
             <Button
                 android:id="@+id/button03"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="3"
                 android:text="@string/btn_3" />
         </TableRow>
@@ -60,6 +65,7 @@
 
             <Button
                 android:id="@+id/button04"
+		style="@style/btn_text"
 		android:tag="4"
 		android:onClick="onClickNum"
                 android:text="@string/btn_4" />
@@ -67,6 +73,7 @@
             <Button
                 android:id="@+id/button05"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="5"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
@@ -75,6 +82,7 @@
             <Button
                 android:id="@+id/button06"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="6"
                 android:text="@string/btn_6" />
         </TableRow>
@@ -87,12 +95,14 @@
             <Button
                 android:id="@+id/button_07"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="7"
                 android:text="@string/btn_7" />
 
             <Button
                 android:id="@+id/button_08"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="8"
                 android:layout_marginLeft="@dimen/padding_medium"
                 android:layout_marginRight="@dimen/padding_medium"
@@ -101,6 +111,7 @@
             <Button
                 android:id="@+id/button_09"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="9"
                 android:text="@string/btn_9" />
         </TableRow>
@@ -113,12 +124,14 @@
             <Button
                 android:id="@+id/button00"
 		android:onClick="onClickNum"
+		style="@style/btn_text"
 		android:tag="0"
                 android:layout_weight="1"
                 android:text="@string/btn_0" />
 
             <Button
                 android:id="@+id/button_clear"
+		style="@style/btn_text"
                 android:layout_weight="2"
                 android:text="@string/btn_clear" />
         </TableRow>
@@ -132,6 +145,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tableLayout1"
         android:layout_marginTop="38dp"
-        android:text="Button" />
+	style="@style/btn_text"
+	android:text="@string/btn_done" />
 
 </RelativeLayout>
