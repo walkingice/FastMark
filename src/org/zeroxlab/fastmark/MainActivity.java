@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,12 +12,16 @@ import android.widget.TextView;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Browser;
+import android.preference.PreferenceManager;
+import android.preference.EditTextPreference;
 
 public class MainActivity extends Activity {
 
     private static int LENGTH = 4;
     private static String APP_ID = "BUILD_FOR_FAMILY";
+    private static String KEY_BASE_URL = "key_base_url";
     private static String BASE_URL = "http://tw.stock.yahoo.com/q/q?s=";
+    private String mBaseUrl;
     TextView mDisplay;
 
     @Override
@@ -24,6 +29,18 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDisplay = (TextView)findViewById(R.id.displayText);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        String url = prefs.getString(KEY_BASE_URL, BASE_URL);
+        if (url != null || url != "") {
+            mBaseUrl = url;
+        } else {
+            mBaseUrl = BASE_URL;
+        }
     }
 
     @Override
@@ -60,7 +77,7 @@ public class MainActivity extends Activity {
     private void createShortcut(String key) {
         final Intent in = new Intent();
         final Intent viewIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse(BASE_URL + key));
+                Uri.parse(mBaseUrl + key));
         Parcelable icon = Intent.ShortcutIconResource.fromContext(
                 this, R.drawable.ic_launcher);
         viewIntent.putExtra(Browser.EXTRA_APPLICATION_ID, APP_ID);
@@ -80,5 +97,13 @@ public class MainActivity extends Activity {
         }
 
         mDisplay.setText(str);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menu_settings) {
+            Intent intent = new Intent(this, PrefMain.class);
+            startActivity(intent);
+        }
+        return true;
     }
 }
