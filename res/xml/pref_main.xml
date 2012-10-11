@@ -9,6 +9,11 @@
 		    android:key="key_base_url"
 		    android:defaultValue="@string/default_base_url"
 		    />
+	    <Preference
+		    android:title="@string/pref_reset_url"
+		    android:summary="@string/pref_reset_url_summary"
+		    android:key="key_reset_url"
+		    />
     </PreferenceCategory>
 </PreferenceScreen>
 

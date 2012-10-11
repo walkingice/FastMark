@@ -23,4 +23,6 @@
     <string name="pref_base_url">基本網址</string>
     <string name="pref_base_url_summary">設定基本的網址，所有輸入的數字都會接在此網址之後</string>
     <string name="default_base_url">http://tw.stock.yahoo.com/q/q?s=</string>
+    <string name="pref_reset_url">重設基本網址</string>
+    <string name="pref_reset_url_summary">基本網址重新設定為預設值</string>
 </resources>
