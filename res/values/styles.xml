@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="android:Theme.Light" />
 
     <style name="display_text">
-	    <item name="android:textSize">42sp</item>
+	    <item name="android:textSize">70sp</item>
 	    <item name="android:textStyle">bold</item>
     </style>
     <style name="btn_text">
